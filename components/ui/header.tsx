@@ -5,16 +5,14 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Logo from './logo'
 import Dropdown from '@/components/utils/dropdown'
-import MobileMenu from './mobile-menu'
+import MobileMenu from './mobile-menu';
+import data from '../data'
 
 export default function Header() {
 
 	const [top, setTop] = useState<boolean>(true)
 
-	const nav = [{ href: '#home', name: 'Home', button: false }, 
-	{ href: '#servicios', name: 'Servicios', button: false },
-	{ href: '#nosotros', name: 'Nosotros', button: false },
-	{ href: '#contacto', name: 'Contacto', button: true }]
+	const nav = data.nav;
 
 	// detect whether user has scrolled the page down by 10px
 	const scrollHandler = () => {

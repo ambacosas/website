@@ -1,13 +1,8 @@
-import { BsJournalCode, BsFillDiagram3Fill } from 'react-icons/bs'
+import { BsJournalCode, BsFillDiagram3Fill } from 'react-icons/bs';
+import data from './data';
 
 export default function FeaturesBlocks() {
-	const soluciones = [{ titulo: 'Soluciones Tecnológicas Innovadoras', icono: BsJournalCode, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	{ titulo: 'Estrategias de Desarrollo Organizacional', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	{ titulo: 'Proyectos a la Medida', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	{ titulo: 'Consultoría Estratégica Especializada', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	{ titulo: 'Herramientas de Optimización de Procesos', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	{ titulo: 'Innovación en Consultoría Empresarial', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-	]
+	const soluciones = data.solutionCards;
 	return (
 		<section className="relative">
 
@@ -20,8 +15,8 @@ export default function FeaturesBlocks() {
 
 					{/* Section header */}
 					<div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-						<h2 className="h2 mb-4">Explore the solutions</h2>
-						<p className="text-xl text-gray-600">Te invitamos a sumergirte en un universo de soluciones empresariales diseñadas para impulsar tu organización hacia nuevos horizontes de éxito.</p>
+						<h2 className="h2 mb-4">{data.solutions.titulo}</h2>
+						<p className="text-xl text-gray-600">{data.solutions.subtitulo}</p>
 					</div>
 
 					{/* Items */}

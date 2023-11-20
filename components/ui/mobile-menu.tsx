@@ -3,17 +3,18 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
+import data from '../data'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
-	const nav = [{ href: '#home', name: 'Home', button: false }, 
-	{ href: '#servicios', name: 'Servicios', button: false },
-  { href: '#nosotros', name: 'Nosotros', button: false },
-	{ href: '#contacto', name: 'Contacto', button: true }]
+	const nav = data.nav
 
+  const itemClick = () => {
+    setMobileNavOpen(false)
+  }
   // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
@@ -70,13 +71,13 @@ export default function MobileMenu() {
           <ul className="px-5 py-2">
           {nav.map((item, index) => (
 								!item.button ?
-									<li key={index}>
+									<li key={index} onClick={() => itemClick()} >
 										<Link href={item.href} className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
 											{item.name}
 										</Link>
 									</li>
 									:
-									<li key={index}>
+									<li key={index} onClick={() => itemClick()} >
 										<Link href={item.href} className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
 											<span>{item.name}</span>
 											<svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

@@ -1,16 +1,10 @@
 import Image from 'next/image'
-import TestimonialImage from '@/public/images/testimonial.jpg'
-import Joacoimg from '@/public/images/JA.jpg'
-import Lautiimg from '@/public/images/LC.jpg'
-import LBimg from '@/public/images/LB.jpg'
 import { BsLinkedin } from 'react-icons/bs'
-import Link from 'next/link'
+import Link from 'next/link';
+import data from './data';
+
 export default function Testimonials() {
-  const testimonios = [ 
-    {texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Lorenzo Barrantes', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' }, 
-    {texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Carlos Lautaro Colli', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
-    {texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Joaquin Amodio', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' }, 
-  ]
+  const testimonios = data.nosotros;
   return (
     <section id='nosotros' className="relative">
 
@@ -34,13 +28,12 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
-          {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Trusted by over 20,000 companies all over the world</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
-              blandit libero cursus mattis.</p>
+          <div className="max-w-3xl mx-auto text-center pb-8 md:pb-16">
+            <h2 className="h2 mb-2">Sobre Nosotros</h2>
+            {/* <p className="text-xl text-gray-600" data-aos="zoom-y-out"></p> */}
           </div>
 
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
+          {/* <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
 
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <svg className="max-w-full fill-current text-gray-400" width="124" height="24" viewBox="0 0 124 24" xmlns="http://www.w3.org/2000/svg">

@@ -1,7 +1,9 @@
 import VideoThumb from '@/public/images/hero-image.png'
 import ModalVideo from '@/components/modal-video'
+import data from  './data';
 
 export default function Hero() {
+
   return (
     <section id='#home' className="relative">
 
@@ -29,10 +31,9 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Bienvenidos a <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-400">AMBACO</span></h1>
+            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{data.hero.titulo}<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-400">{data.hero.span}</span></h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Tu socio estratégico para impulsar el crecimiento y la excelencia en tu empresa.
-              Sabemos que cada decisión cuenta, es por eso que estamos aquí para ofrecerte soluciones personalizadas y orientadas a resultados que llevan tu negocio al siguiente nivel.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{data.hero.texto}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-[#B571FC] hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contacto">Contacto</a>
