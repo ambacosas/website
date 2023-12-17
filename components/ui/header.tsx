@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
-import Logo from './logo'
+import Logo from '@/public/images/logoambaco.png'
 import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu';
 import data from '../data'
+import Image from 'next/image'
 
 export default function Header() {
 
@@ -32,7 +33,7 @@ export default function Header() {
 
 					{/* Site branding */}
 					<div className="shrink-0 mr-4">
-						<Logo />
+						<Image className='w-[125px]' src={Logo} alt='' />
 					</div>
 
 					{/* Desktop navigation */}

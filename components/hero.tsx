@@ -1,6 +1,7 @@
 import VideoThumb from '@/public/images/hero-image.png'
 import ModalVideo from '@/components/modal-video'
 import data from  './data';
+import Image from 'next/image'
 
 export default function Hero() {
 
@@ -30,8 +31,9 @@ export default function Hero() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20 h-screen">
 
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{data.hero.titulo}<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-400">{data.hero.span}</span></h1>
+          <div className="text-center flex flex-col items-center justify-center pb-12 md:pb-16">
+            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{data.hero.titulo}</h1>
+            <Image alt='' className='w-1/2 mb-4' src={data.hero.span} />
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{data.hero.texto}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">

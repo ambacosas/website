@@ -2,6 +2,7 @@ import { BsJournalCode, BsFillDiagram3Fill } from 'react-icons/bs';
 import Joacoimg from '@/public/images/JA.jpg';
 import Lautiimg from '@/public/images/LC.jpg';
 import LBimg from '@/public/images/LB.jpg';
+import Logo from '@/public/images/logoambaco.png'
 
 const data = {
  nav: [
@@ -12,7 +13,7 @@ const data = {
  ],
  hero: {
   titulo: 'Bienvenidos a',
-  span: 'AMBACO',
+  span: Logo,
   texto: 'Tu socio estratégico para impulsar el crecimiento y la excelencia en tu empresa. Sabemos que cada decisión cuenta, es por eso que estamos aquí para ofrecerte soluciones personalizadas y orientadas a resultados que llevan tu negocio al siguiente nivel.'
  },
  services: {
