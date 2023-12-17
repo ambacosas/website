@@ -17,7 +17,7 @@ const data = {
  },
  services: {
   titulo: 'Nuestro Servicios',
-  subtitulo: 'Nos especializamos en proporcionar un conjunto integral de servicios para satisfacer las necesidades únicas de tu empresa',
+  subtitulo: 'Nos dedicamos a optimizar y relevar procesos claves de negocio para mejorar la eficiencia de procesos aplicando metodologías Lean. A su vez contamos con experiencia en analítica de datos para mostrar indicadores claves para la toma de decisiones.',
   titulo2: 'Powerful suite of tools',
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
