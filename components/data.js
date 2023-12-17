@@ -22,21 +22,18 @@ const data = {
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
  servicesTab: [
-  { n: 1, titulo: 'Diagnóstico Estratégico', texto: 'Nuestra suite comienza con un análisis exhaustivo de tu empresa. A través de evaluaciones estratégicas, identificamos oportunidades de mejora, fortalezas y áreas de enfoque para desarrollar una estrategia personalizada que maximice tu potencial.' },
-  { n: 2, titulo: 'Optimización de Procesos', texto: 'Maximizamos la eficiencia operativa a través de la revisión y mejora continua de tus procesos empresariales. Nuestra metodología busca eliminar obstáculos, reducir costos y mejorar la calidad para garantizar un rendimiento óptimo.' },
-  { n: 3, titulo: 'Consultoría Estratégica', texto: 'Guiamos a tu empresa hacia el éxito a través de una consultoría estratégica personalizada. Ya sea que estés buscando expandirte, diversificar tu oferta o enfrentar nuevos desafíos, nuestro equipo está preparado para brindarte la orientación que necesitas.' },
+  { n: 1, titulo: 'Inteligencia de Negocios', texto: 'Relevamiento de indicadores claves de negocio y procesos para la eficientización de flujos de información y generación de herramientas que permitan visualizar los KPIs de su empresa, facilitando la toma de decisiones y el seguimiento de las actividades.' },
+  { n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
  ],
  solutions: {
   titulo: 'Explore the solutions',
   subtitulo: 'Te invitamos a sumergirte en un universo de soluciones empresariales diseñadas para impulsar tu organización hacia nuevos horizontes de éxito.',
  },
  solutionCards: [
-  { titulo: 'Soluciones Tecnológicas Innovadoras', icono: BsJournalCode, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { titulo: 'Estrategias de Desarrollo Organizacional', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { titulo: 'Proyectos a la Medida', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { titulo: 'Consultoría Estratégica Especializada', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { titulo: 'Herramientas de Optimización de Procesos', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { titulo: 'Innovación en Consultoría Empresarial', icono: BsFillDiagram3Fill, texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { titulo: 'Proyectos a la Medida', icono: BsJournalCode, texto: 'Relevamiento en profundidad de las necesidades y planificación estratégica.' },
+  { titulo: 'Diversidad de Herramientas Tecnológicas', icono: BsFillDiagram3Fill, texto: 'Aplicación de herramientas de visualización, programación y organización.' },
+  { titulo: 'Innovación en Procesos', icono: BsFillDiagram3Fill, texto: 'Análisis exhaustivo y propuesta de soluciones sobre procesos.' },
+  { titulo: 'Enfoque en Satisfacción al Cliente', icono: BsFillDiagram3Fill, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
  nosotros: [
   { texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Lorenzo Barrantes', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
