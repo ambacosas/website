@@ -20,15 +20,15 @@ export default function FeaturesBlocks() {
 					</div>
 
 					{/* Items */}
-					<div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+					<div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
 
 						{/* 1st item */}
 						{soluciones.map((item, index) => (
-							<div key={index} className="relative flex flex-col min-h-[225px] items-center p-6 bg-white rounded shadow-xl">
+							<div key={index} className="relative flex flex-col min-h-[245px] items-center p-6 bg-white rounded shadow-xl">
 								<div className='p-4 rounded-full bg-blue-600 mb-2'>
 									<item.icono className='text-white font-bold h-6 w-6' />
 								</div>
-								<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{item.titulo}</h4>
+								<h4 className="text-xl text-center font-bold leading-snug tracking-tight mb-1">{item.titulo}</h4>
 								<p className="text-gray-600 text-center">{item.texto}</p>
 							</div>
 						))}

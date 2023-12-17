@@ -36,9 +36,9 @@ const data = {
   { titulo: 'Enfoque en Satisfacción al Cliente', icono: BsFillDiagram3Fill, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
  nosotros: [
-  { texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Lorenzo Barrantes', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
-  { texto: 'I love this prFoduct and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Carlos Lautaro Colli', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' },
-  { texto: 'I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.', nombre: 'Joaquin Amodio', cargo: 'CEO & Co-Funder', empresa: 'Consultora', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
+  { texto: '', nombre: 'Lorenzo Barrantes', cargo: '', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
+  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: '', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' },
+  { texto: '', nombre: 'Joaquin Amodio', cargo: '', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
  ]
 };
 

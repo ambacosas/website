@@ -3,8 +3,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png';
+import Tab1 from '@/public/images/i1.jpeg'
+import Tab2 from '@/public/images/i2.jpeg';
 import data from './data'
 
 export default function Features() {
@@ -22,7 +22,7 @@ export default function Features() {
  useEffect(() => {
   heightFix()
   const intervalId = setInterval(() => {
-   setTab((prevTab) => (prevTab === 1 ? 2 : prevTab === 2 ? 3 : 1));
+   setTab((prevTab) => (prevTab === 1 ? 2 : 1));
   }, 4000);
   return () => clearInterval(intervalId);
  }, [])
@@ -96,8 +96,8 @@ export default function Features() {
           unmount={false}
          >
           <div className="relative inline-flex flex-col">
-           <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-           <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+           <Image className="md:max-w-none mx-auto rounded" src={Tab1} width={500} height="462" alt="Features bg" />
+           {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
           </div>
          </Transition>
          {/* Item 2 */}
@@ -115,29 +115,11 @@ export default function Features() {
           unmount={false}
          >
           <div className="relative inline-flex flex-col">
-           <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-           <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+           <Image className="md:max-w-none mx-auto rounded" src={Tab2} width={500} height="462" alt="Features bg" />
+           {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
           </div>
          </Transition>
          {/* Item 3 */}
-         <Transition
-          show={tab === 3}
-          appear={true}
-          className="w-full"
-          enter="transition ease-in-out duration-700 transform order-first"
-          enterFrom="opacity-0 translate-y-16"
-          enterTo="opacity-100 translate-y-0"
-          leave="transition ease-in-out duration-300 transform absolute"
-          leaveFrom="opacity-100 translate-y-0"
-          leaveTo="opacity-0 -translate-y-16"
-          beforeEnter={() => heightFix()}
-          unmount={false}
-         >
-          <div className="relative inline-flex flex-col">
-           <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-           <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
-          </div>
-         </Transition>
         </div>
        </div>
       </div>
