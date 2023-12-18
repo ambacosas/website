@@ -89,7 +89,7 @@ export default function Testimonials() {
                   <span>{testimonio.cargo}</span> <a className="text-blue-600 hover:underline" href="#0">{`${testimonio.empresa}`}</a>
                 </div>
                 <div className='flex justify-center items-center w-full mt-2'>
-                  <Link href={testimonio.red} className=' rounded-full'>
+                  <Link href={testimonio.red} target='_blank' className=' rounded-full'>
                   <BsLinkedin className='h-6 w-6' />
                   </Link>
                   </div>
