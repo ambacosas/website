@@ -19,7 +19,7 @@ const data = {
  services: {
   titulo: 'Nuestro Servicios',
   subtitulo: 'Nos dedicamos a relevar y optimizar procesos claves de su negocio para mejorar la eficiencia de los mismos aplicando metodologías Lean. A su vez contamos con experiencia en analítica de datos para visualizar indicadores claves para la toma de decisiones.',
-  titulo2: 'Powerful suite of tools',
+  titulo2: 'El poder de las herramientas',
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
  servicesTab: [
@@ -27,7 +27,7 @@ const data = {
   { n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
  ],
  solutions: {
-  titulo: 'Explore the solutions',
+  titulo: 'Explora las soluciones',
   subtitulo: 'Te invitamos a sumergirte en un universo de soluciones empresariales diseñadas para impulsar tu organización hacia nuevos horizontes de éxito.',
  },
  solutionCards: [
