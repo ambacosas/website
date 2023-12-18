@@ -14,7 +14,7 @@ export default function Testimonials() {
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-02">
               <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor="#b571fc" offset="77.402%" />
+              <stop stopColor="#0070f4" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
             </linearGradient>
           </defs>

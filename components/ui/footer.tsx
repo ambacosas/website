@@ -111,6 +111,11 @@ export default function Footer() {
           {/* Social as */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
+              <a href="#0" className="flex p-2 hover:scale-105 justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Linkedin">
+                <BsLinkedin className='hover:text-blue-500 w-4 h-4' />
+              </a>
+            </li>
+            <li>
               <a href="#0" className="flex p-2 hover:scale-105 justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                 <BsLinkedin className='hover:text-blue-500 w-4 h-4' />
               </a>

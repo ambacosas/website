@@ -14,7 +14,7 @@ export default function Hero() {
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
               <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor="#b571fc" offset="77.402%" />
+              <stop stopColor='#0070f4' offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
             </linearGradient>
           </defs>
@@ -38,7 +38,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{data.hero.texto}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-[#B571FC] hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contacto">Contacto</a>
+                  <a className="btn text-white bg-prim hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contacto">Contacto</a>
                 </div>
                 <div>
                   <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#servicios">Servicios</a>

@@ -6,10 +6,10 @@ import Logo from '@/public/images/logoambaco.png'
 
 const data = {
  nav: [
-  { href: '#home', name: 'Home', button: false }, 
-  { href: '#servicios', name: 'Servicios', button: false },
-  { href: '#nosotros', name: 'Nosotros', button: false },
-  { href: '#contacto', name: 'Contacto', button: true }
+  // { href: 'home', name: 'Home', button: false }, 
+  { href: 'servicios', name: 'Servicios', button: false },
+  { href: 'nosotros', name: 'Nosotros', button: false },
+  { href: 'contacto', name: 'Contacto', button: true }
  ],
  hero: {
   titulo: 'Bienvenidos a',
@@ -18,7 +18,7 @@ const data = {
  },
  services: {
   titulo: 'Nuestro Servicios',
-  subtitulo: 'Nos dedicamos a optimizar y relevar procesos claves de negocio para mejorar la eficiencia de procesos aplicando metodologías Lean. A su vez contamos con experiencia en analítica de datos para mostrar indicadores claves para la toma de decisiones.',
+  subtitulo: 'Nos dedicamos a relevar y optimizar procesos claves de su negocio para mejorar la eficiencia de los mismos aplicando metodologías Lean. A su vez contamos con experiencia en analítica de datos para visualizar indicadores claves para la toma de decisiones.',
   titulo2: 'Powerful suite of tools',
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
@@ -37,9 +37,9 @@ const data = {
   { titulo: 'Enfoque en Satisfacción al Cliente', icono: BsFillDiagram3Fill, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
  nosotros: [
-  { texto: '', nombre: 'Lorenzo Barrantes', cargo: '', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
-  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: '', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' },
   { texto: '', nombre: 'Joaquin Amodio', cargo: '', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
+  { texto: '', nombre: 'Lorenzo Barrantes', cargo: '', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
+  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: '', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
  ]
 };
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, MouseEvent } from 'react'
 
 import Link from 'next/link'
 import Logo from '@/public/images/logoambaco.png'
@@ -12,6 +12,22 @@ import Image from 'next/image'
 export default function Header() {
 
 	const [top, setTop] = useState<boolean>(true)
+	
+	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault();
+		const href = (e.currentTarget.getAttribute('href') || '').slice(1); // Obtén el href del enlace
+		const section = document.getElementById(href);
+		
+		if (section) {
+				section.scrollIntoView({ behavior: 'smooth' });
+				if (href !== 'home'){
+					setTop(false);
+
+				}else{
+					setTop(true)
+				}
+		}
+};
 
 	const nav = data.nav;
 
@@ -54,18 +70,20 @@ export default function Header() {
 							{nav.map((item, index) => (
 								!item.button ?
 									<li key={index}>
-										<Link href={item.href} className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
+										<a  href={`#${item.href}`}
+              onClick={scrollToSection} className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
 											{item.name}
-										</Link>
+										</a>
 									</li>
 									:
 									<li key={index}>
-										<Link href={item.href} className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+										<a href={`#${item.href}`}
+              onClick={scrollToSection} className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
 											<span>{item.name}</span>
 											<svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
 												<path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
 											</svg>
-										</Link>
+										</a>
 									</li>
 							))}
 					</ul>
