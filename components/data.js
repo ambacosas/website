@@ -37,9 +37,9 @@ const data = {
   { titulo: 'Enfoque en Satisfacción al Cliente', icono: BsFillDiagram3Fill, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
  nosotros: [
-  { texto: '', nombre: 'Joaquin Amodio', cargo: '', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
-  { texto: '', nombre: 'Lorenzo Barrantes', cargo: '', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
-  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: '', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
+  { texto: '', nombre: 'Joaquín Amodio', cargo: 'Ingeniero Industrial', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
+  { texto: '', nombre: 'Lorenzo Barrantes', cargo: 'Ingeniero Industrial', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
+  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: 'Ingeniero Industrial', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
  ]
 };
 
