@@ -18,7 +18,7 @@ const data = {
  },
  services: {
   titulo: 'Nuestro Servicios',
-  subtitulo: 'Nos dedicamos a relevar y optimizar procesos claves de su negocio para mejorar la eficiencia de los mismos aplicando metodologías Lean. A su vez contamos con experiencia en analítica de datos para visualizar indicadores claves para la toma de decisiones.',
+  subtitulo: 'Nos dedicamos a relevar y optimizar procesos claves de su negocio para mejorar la eficiencia de los mismos, aplicando metodologías Lean. A su vez, contamos con experiencia en analítica de datos, que nos permite generar visualizaciones de indicadores claves para facilitar la toma de decisiones.',
   titulo2: 'El poder de las herramientas',
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
