@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import Tab1 from "@/public/images/i1.jpeg";
-import Tab2 from "@/public/images/i2.jpeg";
+import Tab2 from "@/public/images/i3.png";
 import {dataEs, dataEn} from "./data";
 import { useLanguage } from "./context/LanguageContext";
 

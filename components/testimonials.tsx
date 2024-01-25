@@ -74,7 +74,7 @@ export default function Testimonials() {
 
           {/* Testimonials */}
           {testimonios.map((testimonio, index) => (
-          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out" key={index}>
             <div className="relative flex items-center justify-center border-2 border-gray-200 rounded bg-white">
 
               {/* Testimonial */}
