@@ -4,6 +4,8 @@ import React, { FormEvent, useRef, useState } from "react";
 import { BiLoader, BiCheck, BiX } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
 import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
+import { useLanguage } from "./context/LanguageContext";
+import { dataEs, dataEn } from "./data";
 const initialState = {
   name: "",
   email: "",
@@ -16,6 +18,9 @@ export default function Newsletter() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const {currentLanguage} = useLanguage();
+	const dataForm = currentLanguage === 'es' ? dataEs.form : dataEn.form;
+
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
@@ -64,7 +69,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="contacto">
+    <section id="contact">
       <div className="max-w-6xl min-h-[460px] mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* CTA box */}
@@ -159,7 +164,7 @@ export default function Newsletter() {
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               {/* CTA content */}
               <div className="text-center flex flex-col items-center justify-center lg:text-left lg:max-w-xxl">
-                <h3 className="h3 text-white mb-2">Contacto</h3>
+                <h3 className="h3 text-white mb-2">{dataForm.titulo}</h3>
                 {/* <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p> */}
                 <li className="flex items-center mb-3">
 																	<BsFillTelephoneFill className="w-6 h-6 bg-white p-1 rounded-full" />
@@ -178,7 +183,7 @@ export default function Newsletter() {
                         id="name"
                         name="name"
                         className="w-full"
-                        placeholder="Nombre"
+                        placeholder={currentLanguage === 'es' ? 'Nombre' : 'Name'}
                         required
                         onChange={handleChange}
                       />
@@ -201,7 +206,7 @@ export default function Newsletter() {
                       id="message"
                       className="w-full"
                       rows={4}
-                      placeholder="Mensaje"
+                      placeholder={currentLanguage === 'es' ? 'Mensaje' : 'Message'}
                       required
                       onChange={handleChange}
                     ></textarea>
@@ -223,14 +228,14 @@ export default function Newsletter() {
                   >
                     {loading ? (
                       <div className="flex items-center">
-                        <BiLoader className="animate-spin mr-2" /> Enviando...
+                        <BiLoader className="animate-spin mr-2" /> dataForm.enviar
                       </div>
                     ) : success ? (
                       <BiCheck className="h-8 w-8" />
                     ) : error ? (
                       <BiX className="h-8 w-8" />
                     ) : (
-                      "Enviar Mensaje"
+                      dataForm.boton
                     )}
                   </button>
                 </form>

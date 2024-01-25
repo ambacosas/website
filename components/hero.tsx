@@ -1,9 +1,15 @@
+"use client"
 import VideoThumb from '@/public/images/hero-image.png'
+import React, { useEffect, useState } from 'react';
 import ModalVideo from '@/components/modal-video'
-import data from  './data';
+import {dataEs, dataEn} from  './data';
 import Image from 'next/image'
+import { useLanguage } from './context/LanguageContext';
 
 export default function Hero() {
+
+  const { currentLanguage } = useLanguage();
+	const dataHero = currentLanguage === 'es' ? dataEs.hero : dataEn.hero
 
   return (
     <section id='#home' className="relative">
@@ -32,16 +38,16 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center flex flex-col items-center justify-center pb-12 md:pb-16">
-            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{data.hero.titulo}</h1>
-            <Image alt='' className='w-1/2 mb-4' src={data.hero.span} />
+            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{dataHero.titulo}</h1>
+            <Image alt='' className='w-1/2 mb-4' src={dataHero.span} />
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{data.hero.texto}</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{dataHero.texto}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-prim hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contacto">Contacto</a>
+                  <a className="btn text-white bg-prim hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contact">{dataHero.boton1}</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#servicios">Servicios</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#services">{dataHero.boton2}</a>
                 </div>
               </div>
             </div>

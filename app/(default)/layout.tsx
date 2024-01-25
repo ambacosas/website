@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import Footer from '@/components/ui/footer'
+import { LanguageProvider } from '@/components/context/LanguageContext'
 
 export default function DefaultLayout({
   children,
@@ -19,8 +20,8 @@ export default function DefaultLayout({
       disable: 'phone',
       duration: 700,
       easing: 'ease-out-cubic',
-    })
-  })
+    });
+  }, []);
 
   return (
     <>

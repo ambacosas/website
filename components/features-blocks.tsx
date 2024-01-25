@@ -1,8 +1,13 @@
+"use client"
+
 import { BsJournalCode, BsFillDiagram3Fill } from 'react-icons/bs';
-import data from './data';
+import {dataEn, dataEs} from './data';
+import { useLanguage } from './context/LanguageContext';
 
 export default function FeaturesBlocks() {
-	const soluciones = data.solutionCards;
+	const {currentLanguage} = useLanguage();
+	const soluciones = currentLanguage === 'es' ? dataEs.solutionCards : dataEn.solutionCards
+	const soluciones2 = currentLanguage === 'es' ? dataEs.solutions : dataEn.solutions
 	return (
 		<section className="relative">
 
@@ -15,8 +20,8 @@ export default function FeaturesBlocks() {
 
 					{/* Section header */}
 					<div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-						<h2 className="h2 mb-4">{data.solutions.titulo}</h2>
-						<p className="text-xl text-gray-600">{data.solutions.subtitulo}</p>
+						<h2 className="h2 mb-4">{soluciones2.titulo}</h2>
+						<p className="text-xl text-gray-600">{soluciones2.subtitulo}</p>
 					</div>
 
 					{/* Items */}

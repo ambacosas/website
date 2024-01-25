@@ -1,12 +1,17 @@
+"use client"
 import Image from 'next/image'
 import { BsLinkedin } from 'react-icons/bs'
 import Link from 'next/link';
-import data from './data';
+import { dataEn, dataEs } from './data';
+import { useLanguage } from './context/LanguageContext';
 
 export default function Testimonials() {
-  const testimonios = data.nosotros;
+
+  const { currentLanguage } = useLanguage()
+  const testimonios =  currentLanguage === 'es' ? dataEs.nosotros : dataEn.nosotros;
+  
   return (
-    <section id='nosotros' className="relative">
+    <section id='about-us' className="relative">
 
       {/* Illustration behind content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
@@ -29,7 +34,7 @@ export default function Testimonials() {
         <div className="py-12 md:py-20">
 
           <div className="max-w-3xl mx-auto text-center pb-8 md:pb-16">
-            <h2 className="h2 mb-2">Sobre Nosotros</h2>
+            <h2 className="h2 mb-2">{'Sobre Nosotros'}</h2>
             {/* <p className="text-xl text-gray-600" data-aos="zoom-y-out"></p> */}
           </div>
 
@@ -105,3 +110,4 @@ export default function Testimonials() {
     </section>
   )
 }
+

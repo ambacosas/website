@@ -3,14 +3,16 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
-import data from '../data'
+import { dataEn, dataEs } from '../data'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function MobileMenu() {
-  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
+  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
+  const {currentLanguage} = useLanguage();
+	const nav = currentLanguage === 'es' ? dataEs.nav : dataEn.nav
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
-	const nav = data.nav
 	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const href = (e.currentTarget.getAttribute('href') || '').slice(1); // Obtén el href del enlace

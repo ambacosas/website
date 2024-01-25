@@ -6,12 +6,19 @@ import Link from 'next/link'
 import Logo from '@/public/images/logoambaco.png'
 import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu';
-import data from '../data'
+import {dataEs, dataEn} from '../data'
 import Image from 'next/image'
+import { useLanguage } from '../context/LanguageContext'
+import { Bs0CircleFill, Bs1Circle } from 'react-icons/bs'
 
 export default function Header() {
 
-	const [top, setTop] = useState<boolean>(true)
+	const [top, setTop] = useState<boolean>(true);
+	const {currentLanguage, toggleLanguage} = useLanguage();
+	const nav = currentLanguage === 'es' ? dataEs.nav : dataEn.nav
+	const handleLanguageToggle = () => {
+		toggleLanguage();
+};
 	
 	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
@@ -29,7 +36,6 @@ export default function Header() {
 		}
 };
 
-	const nav = data.nav;
 
 	// detect whether user has scrolled the page down by 10px
 	const scrollHandler = () => {
@@ -86,6 +92,11 @@ export default function Header() {
 										</a>
 									</li>
 							))}
+							<li>
+								<a onClick={handleLanguageToggle}>
+									{currentLanguage === 'es' ? <Bs0CircleFill /> : <Bs1Circle /> }
+								</a>
+							</li>
 					</ul>
 
 				</nav>

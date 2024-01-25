@@ -4,17 +4,63 @@ import Lautiimg from '@/public/images/LC.jpg';
 import LBimg from '@/public/images/LB.jpg';
 import Logo from '@/public/images/logoambaco.png'
 
-const data = {
+export const dataEn = {
+ nav: [
+  { href: 'services', name: 'Services', button: false },
+  { href: 'about-us', name: 'About Us', button: false },
+  { href: 'contact', name: 'Contact', button: true }
+ ],
+ hero: {
+  titulo: 'Welcome to',
+  span: Logo,
+  texto: 'Your strategic partner to drive growth and excellence in your company. We know that every decision matters, and we are here to offer you personalized solutions focused on results that take your business to the next level.',
+  boton1: 'Contact',
+  boton2: 'Services',
+  },
+ services: {
+  titulo: 'Our Services',
+  subtitulo: 'We focus on identifying and optimizing key processes in your business to improve their efficiency, applying Lean methodologies. Additionally, we have experience in data analytics, allowing us to generate visualizations of key indicators to facilitate decision-making.',
+  titulo2: 'The Power of Tools',
+  subtitulo2: 'Designed to catalyze your company\'s success. With a comprehensive approach to business consulting, we offer a wide range of powerful tools designed to boost efficiency, innovation, and sustainable growth.',
+ },
+ servicesTab: [
+  { n: 1, titulo: 'Business Intelligence', texto: 'Survey of key business and process indicators to streamline information flows and generate tools that visualize your company\'s KPIs, facilitating decision-making and activity tracking.' },
+  { n: 2, titulo: 'Continuous Improvement', texto: 'Application of Lean methodologies for the organization, restructuring, and elimination of processes with the aim of optimization and achieving measurable results.' },
+ ],
+ solutions: {
+  titulo: 'Explore the Solutions',
+  subtitulo: 'We invite you to immerse yourself in a universe of business solutions designed to propel your organization towards new horizons of success.',
+ },
+ solutionCards: [
+  { titulo: 'Tailored Projects', icono: BsJournalCode, texto:'In-depth survey of needs and strategic planning.' },
+  { titulo: 'Diversity of Technological Tools', icono: BsFillDiagram3Fill, texto: 'Application of visualization, programming, and organizational tools.' },
+  { titulo: 'Innovation in Processes', icono: BsFillDiagram3Fill, texto:'Comprehensive analysis and proposal of solutions on processes.' },
+  { titulo: 'Customer Satisfaction Focus', icono: BsFillDiagram3Fill, texto:'Solutions designed with the customer at the center, seeking to maximize added value.' },
+ ],
+ nosotros: [
+  { texto: '', nombre: 'Joaquín Amodio', cargo: 'Industrial Engineer', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
+  { texto: '', nombre: 'Lorenzo Barrantes', cargo: 'Industrial Engineer', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
+  { texto: '', nombre: 'Carlos Lautaro Colli', cargo: 'Industrial Engineer', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
+ ],
+ form: {
+  titulo: 'Contact',
+  enviar: 'Sending...',
+  boton: 'Send Message'
+ }
+};
+export const dataEs = {
  nav: [
   // { href: 'home', name: 'Home', button: false }, 
-  { href: 'servicios', name: 'Servicios', button: false },
-  { href: 'nosotros', name: 'Nosotros', button: false },
-  { href: 'contacto', name: 'Contacto', button: true }
+  { href: 'services', name: 'Servicios', button: false },
+  { href: 'about-us', name: 'Nosotros', button: false },
+  { href: 'contact', name: 'Contacto', button: true }
  ],
  hero: {
   titulo: 'Bienvenidos a',
   span: Logo,
-  texto: 'Tu socio estratégico para impulsar el crecimiento y la excelencia en tu empresa. Sabemos que cada decisión cuenta y estamos aquí para ofrecerte soluciones personalizadas y orientadas a resultados que llevan tu negocio al siguiente nivel.'
+  texto: 'Tu socio estratégico para impulsar el crecimiento y la excelencia en tu empresa. Sabemos que cada decisión cuenta y estamos aquí para ofrecerte soluciones personalizadas y orientadas a resultados que llevan tu negocio al siguiente nivel.',
+  boton1: 'Contacto',
+  boton2: 'Servicios',
  },
  services: {
   titulo: 'Nuestro Servicios',
@@ -40,7 +86,11 @@ const data = {
   { texto: '', nombre: 'Joaquín Amodio', cargo: 'Ingeniero Industrial', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
   { texto: '', nombre: 'Lorenzo Barrantes', cargo: 'Ingeniero Industrial', empresa: '', imagen: LBimg, red: 'https://www.linkedin.com/in/lorenzo-barrantes/' },
   { texto: '', nombre: 'Carlos Lautaro Colli', cargo: 'Ingeniero Industrial', empresa: '', imagen: Lautiimg, red: 'https://www.linkedin.com/in/carloslautarocolli/' }, 
- ]
+ ],
+ form: {
+  titulo: 'Contacto',
+  enviar: 'Enviando...',
+  boton: 'Enviar Mensaje'
+ }
 };
 
-export default data
