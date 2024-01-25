@@ -34,7 +34,7 @@ export default function Testimonials() {
         <div className="py-12 md:py-20">
 
           <div className="max-w-3xl mx-auto text-center pb-8 md:pb-16">
-            <h2 className="h2 mb-2">{'Sobre Nosotros'}</h2>
+            <h2 className="h2 mb-2">{currentLanguage === 'es'? 'Sobre Nosotros': 'About Us'}</h2>
             {/* <p className="text-xl text-gray-600" data-aos="zoom-y-out"></p> */}
           </div>
 
