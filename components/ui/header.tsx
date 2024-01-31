@@ -108,10 +108,10 @@ export default function Header() {
                 )
               )}
               <li>
-                <a onClick={handleLanguageToggle}>
-                  <div className="w-8 h-8 ml-8">
+                <a onClick={handleLanguageToggle} className="cursor-pointer ">
+                  <div className="w-8 h-8 ml-8 ">
                     <Image
-                      className="w-[125px]"
+                      className="w-[125px] hover:scale-105"
                       src={currentLanguage === "es" ? Arg : Us}
                       alt=""
                     />
