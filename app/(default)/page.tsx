@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   og: {
     title: 'AMBACO',
     description: '',
-    image: 'https://ambaco.com.ar/og.png',
+    image: 'https://ambaco.com.ar/_ipx/w_1200,q_75/%2F_next%2Fstatic%2Fmedia%2Fog.e9221a31.png?url=%2F_next%2Fstatic%2Fmedia%2Fog.e9221a31.png&w=1200&q=75',
     url: 'https://ambaco.com.ar/',
     type: 'website',
     site_name: 'AMBACO'
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: 'https://ambaco.com.ar/',
     title: 'AMBACO',
     description: '',
-    image: 'https://ambaco.com.ar/og.png'
+    image: 'https://ambaco.com.ar/_ipx/w_1200,q_75/%2F_next%2Fstatic%2Fmedia%2Fog.e9221a31.png?url=%2F_next%2Fstatic%2Fmedia%2Fog.e9221a31.png&w=1200&q=75'
   }
 };
 
