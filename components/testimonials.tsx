@@ -90,8 +90,8 @@ export default function Testimonials() {
                   {` ${testimonio.texto} `}
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">{testimonio.nombre}</cite>
-                <div className="text-gray-600">
-                  <span>{testimonio.cargo}</span> <a className="text-blue-600 hover:underline" href="#0">{`${testimonio.empresa}`}</a>
+                <div className="text-gray-600 flex flex-col">
+                  <span>{testimonio.cargo}</span> <p className="text-gray-800">{testimonio.empresa}</p>
                 </div>
                 <div className='flex justify-center items-center w-full mt-2'>
                   <Link href={testimonio.red} target='_blank' className=' rounded-full'>

@@ -15,7 +15,7 @@ export default function Hero() {
     <section id='#home' className="relative">
 
       {/* Illustration behind hero content */}
-      <div  className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
+      <div  className="absolute md:left-1/2 -left-[10px] transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
@@ -34,15 +34,15 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20 h-screen">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20 h-screen lg:h-screen md:h-full">
 
           {/* Section header */}
           <div className="text-center flex flex-col items-center justify-center pb-12 md:pb-16">
-            <h1 className="text-5xl flex flex-col md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{dataHero.titulo}</h1>
-            <Image alt='' className='w-1/2 mb-4' src={dataHero.span} />
-            <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl flex flex-col md:text-[4.25rem] font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{dataHero.titulo}</h1>
+            <Image alt='' className='md:w-1/2 sm:w-2/3 w-full mb-4' src={dataHero.span} />
+            <div className="max-w-3xl mt-2 mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{dataHero.texto}</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
+              <div className=" max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-prim hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contact">{dataHero.boton1}</a>
                 </div>
@@ -52,6 +52,21 @@ export default function Hero() {
               </div>
             </div>
           </div>
+          <div  className="md:hidden absolute -left-[10.75rem] transform -translate-x-1/2 -bottom-[251px] pointer-events-none -z-1" aria-hidden="true">
+        <svg width="1200" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
+              <stop stopColor="#FFF" offset="0%" />
+              <stop stopColor='#0070f4' offset="77.402%" />
+              <stop stopColor="#DFDFDF" offset="100%" />
+            </linearGradient>
+          </defs>
+          <g fill="url(#illustration-01)" fillRule="evenodd">
+            <circle cx="1232" cy="128" r="128" />
+            <circle cx="155" cy="443" r="64" />
+          </g>
+        </svg>
+      </div>
 
           {/* Hero image */}
           {/* <ModalVideo

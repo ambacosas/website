@@ -1,14 +1,30 @@
-import { BsJournalCode, BsFillDiagram3Fill } from 'react-icons/bs';
+import { BsJournalCode, BsFillDiagram3Fill, BsBarChartFill, BsArrowRepeat, BsLightbulb, BsStar   } from 'react-icons/bs';
 import Joacoimg from '@/public/images/JA.jpg';
 import Lautiimg from '@/public/images/LC.jpg';
 import LBimg from '@/public/images/LB.jpg';
 import Logo from '@/public/images/logoambaco.png'
 
+const solucionesIcono = {
+ project: BsJournalCode,
+ tools: BsFillDiagram3Fill,
+ innovation: BsLightbulb,
+ satisfaction: BsStar,
+}
+const href = {
+ services: 'services',
+ about: 'about-us',
+ contact: 'contact',
+}
+const serviciosIcono = {
+ bi: BsBarChartFill,
+ mejora: BsArrowRepeat,
+}
+
 export const dataEn = {
  nav: [
-  { href: 'services', name: 'Services', button: false },
-  { href: 'about-us', name: 'About Us', button: false },
-  { href: 'contact', name: 'Contact', button: true }
+  { href: href.services, name: 'Services', button: false },
+  { href: href.about, name: 'About Us', button: false },
+  { href: href.contact, name: 'Contact', button: true }
  ],
  hero: {
   titulo: 'Welcome to',
@@ -24,18 +40,18 @@ export const dataEn = {
   subtitulo2: 'Designed to catalyze your company\'s success. With a comprehensive approach to business consulting, we offer a wide range of powerful tools designed to boost efficiency, innovation, and sustainable growth.',
  },
  servicesTab: [
-  { n: 1, titulo: 'Business Intelligence', texto: 'Survey of key business and process indicators to streamline information flows and generate tools that visualize your company\'s KPIs, facilitating decision-making and activity tracking.' },
-  { n: 2, titulo: 'Continuous Improvement', texto: 'Application of Lean methodologies for the organization, restructuring, and elimination of processes with the aim of optimization and achieving measurable results.' },
+  {icon: serviciosIcono.bi, n: 1, titulo: 'Business Intelligence', texto: 'Survey of key business and process indicators to streamline information flows and generate tools that visualize your company\'s KPIs, facilitating decision-making and activity tracking.' },
+  {icon: serviciosIcono.mejora, n: 2, titulo: 'Continuous Improvement', texto: 'Application of Lean methodologies for the organization, restructuring, and elimination of processes with the aim of optimization and achieving measurable results.' },
  ],
  solutions: {
   titulo: 'Explore the Solutions',
   subtitulo: 'We invite you to immerse yourself in a universe of business solutions designed to propel your organization towards new horizons of success.',
  },
  solutionCards: [
-  { titulo: 'Tailored Projects', icono: BsJournalCode, texto:'In-depth survey of needs and strategic planning.' },
-  { titulo: 'Diversity of Technological Tools', icono: BsFillDiagram3Fill, texto: 'Application of visualization, programming, and organizational tools.' },
-  { titulo: 'Innovation in Processes', icono: BsFillDiagram3Fill, texto:'Comprehensive analysis and proposal of solutions on processes.' },
-  { titulo: 'Customer Satisfaction Focus', icono: BsFillDiagram3Fill, texto:'Solutions designed with the customer at the center, seeking to maximize added value.' },
+  { titulo: 'Tailored Projects', icono: solucionesIcono.project, texto:'In-depth survey of needs and strategic planning.' },
+  { titulo: 'Diversity of Technological Tools', icono: solucionesIcono.tools, texto: 'Application of visualization, programming, and organizational tools.' },
+  { titulo: 'Innovation in Processes', icono: solucionesIcono.innovation, texto:'Comprehensive analysis and proposal of solutions on processes.' },
+  { titulo: 'Customer Satisfaction Focus', icono: solucionesIcono.satisfaction, texto:'Solutions designed with the customer at the center, seeking to maximize added value.' },
  ],
  nosotros: [
   { texto: '', nombre: 'Joaquín Amodio', cargo: 'Industrial Engineer', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
@@ -51,9 +67,9 @@ export const dataEn = {
 export const dataEs = {
  nav: [
   // { href: 'home', name: 'Home', button: false }, 
-  { href: 'services', name: 'Servicios', button: false },
-  { href: 'about-us', name: 'Nosotros', button: false },
-  { href: 'contact', name: 'Contacto', button: true }
+  { href: href.services, name: 'Servicios', button: false },
+  { href: href.about, name: 'Nosotros', button: false },
+  { href: href.contact, name: 'Contacto', button: true }
  ],
  hero: {
   titulo: 'Bienvenidos a',
@@ -69,18 +85,18 @@ export const dataEs = {
   subtitulo2: 'Diseñada para catalizar el éxito de tu empresa. Con un enfoque integral en la consultoría empresarial, ofrecemos una amplia gama de herramientas poderosas diseñadas para impulsar la eficiencia, la innovación y el crecimiento sostenible.',
  },
  servicesTab: [
-  { n: 1, titulo: 'Inteligencia de Negocios', texto: 'Relevamiento de indicadores claves de negocio y procesos para la eficientización de flujos de información y generación de herramientas que permitan visualizar los KPIs de su empresa, facilitando la toma de decisiones y el seguimiento de las actividades.' },
-  { n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
+  {icon: serviciosIcono.bi, n: 1, titulo: 'Inteligencia de Negocios', texto: 'Relevamiento de indicadores claves de negocio y procesos para la eficientización de flujos de información y generación de herramientas que permitan visualizar los KPIs de su empresa, facilitando la toma de decisiones y el seguimiento de las actividades.' },
+  {icon: serviciosIcono.mejora, n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
  ],
  solutions: {
   titulo: 'Explora las soluciones',
   subtitulo: 'Te invitamos a sumergirte en un universo de soluciones empresariales diseñadas para impulsar tu organización hacia nuevos horizontes de éxito.',
  },
  solutionCards: [
-  { titulo: 'Proyectos a la Medida', icono: BsJournalCode, texto: 'Relevamiento en profundidad de las necesidades y planificación estratégica.' },
-  { titulo: 'Diversidad de Herramientas Tecnológicas', icono: BsFillDiagram3Fill, texto: 'Aplicación de herramientas de visualización, programación y organización.' },
-  { titulo: 'Innovación en Procesos', icono: BsFillDiagram3Fill, texto: 'Análisis exhaustivo y propuesta de soluciones sobre procesos.' },
-  { titulo: 'Enfoque en Satisfacción al Cliente', icono: BsFillDiagram3Fill, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
+  { titulo: 'Proyectos a la Medida', icono: solucionesIcono.project, texto: 'Relevamiento en profundidad de las necesidades y planificación estratégica.' },
+  { titulo: 'Diversidad de Herramientas Tecnológicas', icono: solucionesIcono.tools, texto: 'Aplicación de herramientas de visualización, programación y organización.' },
+  { titulo: 'Innovación en Procesos', icono: solucionesIcono.innovation, texto: 'Análisis exhaustivo y propuesta de soluciones sobre procesos.' },
+  { titulo: 'Enfoque en Satisfacción al Cliente', icono: solucionesIcono.satisfaction, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
  nosotros: [
   { texto: '', nombre: 'Joaquín Amodio', cargo: 'Ingeniero Industrial', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
