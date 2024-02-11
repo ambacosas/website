@@ -15,5 +15,14 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "metadata": {
+        "title": "AMBACO",
+        "description": "", 
+        "og:title": "AMBACO",
+        "og:description": "",
+        "og:image": "https://ambaco.com.ar/og.png",
+        "og:image:width": "1200",
+        "og:image:height": "630"
+      }
 }
