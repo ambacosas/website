@@ -19,7 +19,7 @@ export const metadata = {
     siteName: 'AMBACO',
     images: [
       {
-        url: "http://drive.google.com/uc?export=view&id=1A-kn_UfSNzz8FwIuv_11-Gl7Pixq3vPJ",
+        url: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRpullTl5vSZjQHAPL_eK6OOhDhtmESzoHDLGrq5lJaM-9Zv9n_v_WkLy7GY-YyxSKwTyYcSjlm7QjWzAEaCqlg2QEZlA=s1600",
         width: 1600,
         height: 630,
       }
