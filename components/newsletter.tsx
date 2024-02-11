@@ -18,8 +18,8 @@ export default function Newsletter() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const {currentLanguage} = useLanguage();
-	const dataForm = currentLanguage === 'es' ? dataEs.form : dataEn.form;
+  const { currentLanguage } = useLanguage();
+  const dataForm = currentLanguage === 'es' ? dataEs.form : dataEn.form;
 
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -36,10 +36,10 @@ export default function Newsletter() {
       setLoading(true);
       emailjs
         .sendForm(
-          "service_v1veqmr",
-          "template_ad98oee",
+          "service_bnlp8me",
+          "template_kwgcu5k",
           form.current,
-          "dGG2m0wd02eYp6RZj"
+          "sweYR7mnKyJeGnhM9"
         )
         .then(
           (result) => {
@@ -167,9 +167,9 @@ export default function Newsletter() {
                 <h3 className="h3 text-white mb-2">{dataForm.titulo}</h3>
                 {/* <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p> */}
                 <li className="flex items-center mb-3">
-																	<BsFillTelephoneFill className="w-6 h-6 bg-white p-1 rounded-full" />
-																	<h3 className="text-white text-sm ml-3">+54 91137960274</h3>
-																</li>
+                  <BsFillTelephoneFill className="w-6 h-6 bg-white p-1 rounded-full" />
+                  <h3 className="text-white text-sm ml-3">+54 91137960274</h3>
+                </li>
                 {/* CTA form */}
                 <form
                   ref={form}
@@ -214,17 +214,15 @@ export default function Newsletter() {
                   <button
                     type="submit"
                     disabled={loading || success || !name || !email || !message}
-                    className={`${
-                      success
+                    className={`${success
                         ? "bg-green-500 rounded-full p-2"
                         : error
-                        ? "bg-red-500 rounded-full p-2"
-                        : "bg-blue-500 rounded-lg p-3"
-                    } ${
-                      loading || !name || !email || !message
+                          ? "bg-red-500 rounded-full p-2"
+                          : "bg-blue-500 rounded-lg p-3"
+                      } ${loading || !name || !email || !message
                         ? "cursor-not-allowed opacity-70"
                         : ""
-                    } text-center text-white transition-all duration-100 ease-in`}
+                      } text-center text-white transition-all duration-100 ease-in`}
                   >
                     {loading ? (
                       <div className="flex items-center">
