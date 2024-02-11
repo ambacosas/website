@@ -91,10 +91,10 @@ export default function Testimonials() {
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">{testimonio.nombre}</cite>
                 <div className="text-gray-600 flex flex-col">
-                  <span>{testimonio.cargo}</span> <p className="text-gray-800">{testimonio.empresa}</p>
+                  <span className='mb-3'>{testimonio.cargo}</span> <p className="text-gray-800">{testimonio.empresa}</p>
                 </div>
                 <div className='flex justify-center items-center w-full mt-2'>
-                  <Link href={testimonio.red} target='_blank' className=' rounded-full'>
+                  <Link href={testimonio.red} target='_blank' className=' rounded-full hover:text-blue-500'>
                   <BsLinkedin className='h-6 w-6' />
                   </Link>
                   </div>

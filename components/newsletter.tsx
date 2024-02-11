@@ -161,9 +161,9 @@ export default function Newsletter() {
               </svg>
             </div>
 
-            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+            <div className="relative flex flex-col w-full lg:flex-row justify-between items-center">
               {/* CTA content */}
-              <div className="text-center flex flex-col items-center justify-center lg:text-left lg:max-w-xxl">
+              <div className="text-center flex flex-col items-center justify-center lg:text-left w-3/5 lg:max-w-xxl">
                 <h3 className="h3 text-white mb-2">{dataForm.titulo}</h3>
                 {/* <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p> */}
                 <li className="flex items-center mb-3">
@@ -177,7 +177,7 @@ export default function Newsletter() {
                   className="w-full lg:w-auto flex flex-col items-center justify-center gap-3"
                 >
                   <div className=" flex justify-around gap-2 flex-col lg:flex-row items-center w-full">
-                    <div className="lg:w-full w-5/6">
+                    <div className="w-full">
                       <input
                         type="text"
                         id="name"
@@ -188,7 +188,7 @@ export default function Newsletter() {
                         onChange={handleChange}
                       />
                     </div>
-                    <div className="lg:w-full w-5/6">
+                    <div className="w-full ">
                       <input
                         type="email"
                         id="email"
@@ -228,7 +228,7 @@ export default function Newsletter() {
                   >
                     {loading ? (
                       <div className="flex items-center">
-                        <BiLoader className="animate-spin mr-2" /> dataForm.enviar
+                        <BiLoader className="animate-spin mr-2" /> {dataForm.enviar}
                       </div>
                     ) : success ? (
                       <BiCheck className="h-8 w-8" />

@@ -82,7 +82,7 @@ export default function Features() {
                       <div className="text-gray-600">{tabs.texto}</div>
                     </div>
                     <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                      <tabs.icon />
+                      <tabs.icon className={`${tabs.n == 2 ? 'animate-spin': 'animate-none'}`} />
                     </div>
                   </a>
                 ))}
