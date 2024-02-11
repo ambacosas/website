@@ -32,6 +32,7 @@ export const dataEn = {
   texto: 'Your strategic partner to drive growth and excellence in your company. We know that every decision matters, and we are here to offer you personalized solutions focused on results that take your business to the next level.',
   boton1: 'Contact',
   boton2: 'Services',
+  video: 'Watch the full video (2 min)',
   },
  services: {
   titulo: 'Our Services',
@@ -77,6 +78,7 @@ export const dataEs = {
   texto: 'Tu socio estratégico para impulsar el crecimiento y la excelencia en tu empresa. Sabemos que cada decisión cuenta y estamos aquí para ofrecerte soluciones personalizadas y orientadas a resultados que llevan tu negocio al siguiente nivel.',
   boton1: 'Contacto',
   boton2: 'Servicios',
+  video: 'Mirar video completo (2 min)',
  },
  services: {
   titulo: 'Nuestro Servicios',
