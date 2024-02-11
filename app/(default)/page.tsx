@@ -6,7 +6,7 @@ import Testimonials from '@/components/testimonials'
 import Newsletter from '@/components/newsletter'
 import { LanguageProvider } from '@/components/context/LanguageContext';
 import ogLogo from '../../public/images/og.png';
-import { Head } from 'next/document'
+import Head from 'next/head'
 
 interface Metadata {
   title: string;
@@ -50,10 +50,10 @@ export const metadata: Metadata = {
   }
 };
 
-const Home = () => {
+export default function Home() {
   return (
     <>
-      <Head>
+          <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         {metadata.og && (
@@ -83,8 +83,5 @@ const Home = () => {
       <Testimonials />
       <Newsletter />
     </>
-  );
-};
-
-export default Home;
-
+  )
+}
