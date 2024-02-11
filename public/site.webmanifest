@@ -16,13 +16,21 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "metadata": {
+      "metadata": {
         "title": "AMBACO",
         "description": "", 
         "og:title": "AMBACO",
         "og:description": "",
         "og:image": "https://ambaco.com.ar/og.png",
         "og:image:width": "1200",
-        "og:image:height": "630"
+        "og:image:height": "630",
+        "og:url": "https://ambaco.com.ar/",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:domain": "ambaco.com.ar",
+        "twitter:url": "https://ambaco.com.ar/",
+        "twitter:title": "AMBACO",
+        "twitter:description": "",
+        "twitter:image": "https://ambaco.com.ar/og.png"
       }
 }

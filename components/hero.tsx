@@ -38,10 +38,10 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center flex flex-col items-center justify-center pb-12 md:pb-16">
-            <h1 className="text-4xl flex flex-col md:text-[4.25rem] font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{dataHero.titulo}</h1>
+            <h2 className="text-4xl flex flex-col md:text-[4.25rem] font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{dataHero.titulo}</h2>
             <Image alt='' className='md:w-3/5 sm:w-2/3 w-full mb-4' src={dataHero.span} />
             <div className="max-w-3xl mt-2 mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{dataHero.texto}</p>
+              <h1 className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{dataHero.texto}</h1>
               <div className=" max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-prim hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#contact">{dataHero.boton1}</a>
