@@ -1,7 +1,7 @@
 import { BsJournalCode, BsFillDiagram3Fill, BsBarChartFill, BsArrowRepeat, BsLightbulb, BsStar   } from 'react-icons/bs';
-import Joacoimg from '@/public/images/JA.jpg';
-import Lautiimg from '@/public/images/LC.jpg';
-import LBimg from '@/public/images/LB.jpg';
+import Joacoimg from '@/public/images/JA.png';
+import Lautiimg from '@/public/images/LC.png';
+import LBimg from '@/public/images/LB.png';
 import Logo from '@/public/images/logoambaco.png'
 
 const solucionesIcono = {
