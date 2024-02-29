@@ -1,4 +1,4 @@
-import { BsJournalCode, BsFillDiagram3Fill, BsBarChartFill, BsArrowRepeat, BsLightbulb, BsStar   } from 'react-icons/bs';
+import { BsJournalCode, BsMagic, BsFillDiagram3Fill, BsBarChartFill, BsArrowRepeat, BsLightbulb, BsStar   } from 'react-icons/bs';
 import Joacoimg from '@/public/images/JA.png';
 import Lautiimg from '@/public/images/LC.png';
 import LBimg from '@/public/images/LB.png';
@@ -18,6 +18,7 @@ const href = {
 const serviciosIcono = {
  bi: BsBarChartFill,
  mejora: BsArrowRepeat,
+ agil : BsMagic,
 }
 
 export const dataEn = {
@@ -43,6 +44,7 @@ export const dataEn = {
  servicesTab: [
   {icon: serviciosIcono.bi, n: 1, titulo: 'Business Intelligence', texto: 'Survey of key business and process indicators to streamline information flows and generate tools that visualize your company\'s KPIs, facilitating decision-making and activity tracking.' },
   {icon: serviciosIcono.mejora, n: 2, titulo: 'Continuous Improvement', texto: 'Application of Lean methodologies for the organization, restructuring, and elimination of processes with the aim of optimization and achieving measurable results.' },
+  {icon: serviciosIcono.agil, n: 3, titulo: 'Agile Methodologies', texto: 'We offer a specialized approach in agile methodologies, such as Scrum, Kanban, among others, designed to optimize software development and project management. With this approach, we foster collaboration and ensure the timely delivery of high-quality results. Through iterative processes and a customer-centric mindset, we help companies quickly adapt to market changes and maximize the value of their technology investments.' },
  ],
  solutions: {
   titulo: 'Explore the Solutions',
@@ -89,6 +91,7 @@ export const dataEs = {
  servicesTab: [
   {icon: serviciosIcono.bi, n: 1, titulo: 'Inteligencia de Negocios', texto: 'Relevamiento de indicadores claves de negocio y procesos para la eficientización de flujos de información y generación de herramientas que permitan visualizar los KPIs de su empresa, facilitando la toma de decisiones y el seguimiento de las actividades.' },
   {icon: serviciosIcono.mejora, n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
+  {icon: serviciosIcono.agil, n: 3, titulo: 'Metodologías Ágiles', texto: 'Ofrecemos un enfoque especializado en metodologías ágiles, como Scrum, Kanban, entre otras, diseñadas para optimizar el desarrollo de software y la gestión de proyectos. Con este abordaje, fomentamos la colaboración y garantizamos la entrega oportuna de resultados de alta calidad. A través de procesos iterativos y una mentalidad centrada en el cliente, ayudamos a las empresas a adaptarse rápidamente a los cambios del mercado y a maximizar el valor de sus inversiones en tecnología.' },
  ],
  solutions: {
   titulo: 'Explora las soluciones',
