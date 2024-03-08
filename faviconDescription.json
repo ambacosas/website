@@ -5,13 +5,14 @@
 		"ios": {
 			"pictureAspect": "backgroundAndMargin",
 			"backgroundColor": "#ffffff",
-			"margin": "11%",
+			"margin": "14%",
 			"assets": {
 				"ios6AndPriorIcons": false,
 				"ios7AndLaterIcons": false,
 				"precomposedIcons": false,
 				"declareOnlyDefaultIcon": true
-			}
+			},
+			"appName": "AMBACO"
 		},
 		"desktopBrowser": {
 			"design": "background",
@@ -31,14 +32,16 @@
 					"big": false,
 					"rectangle": false
 				}
-			}
+			},
+			"appName": "AMBACO"
 		},
 		"androidChrome": {
-			"pictureAspect": "noChange",
+			"pictureAspect": "backgroundAndMargin",
+			"margin": "13%",
+			"backgroundColor": "#ffffff",
 			"themeColor": "#ffffff",
 			"manifest": {
 				"name": "AMBACO",
-				"startUrl": "https://ambaco.com.ar/",
 				"display": "standalone",
 				"orientation": "notSet",
 				"onConflict": "override",
@@ -50,7 +53,8 @@
 			}
 		},
 		"safariPinnedTab": {
-			"pictureAspect": "silhouette",
+			"pictureAspect": "blackAndWhite",
+			"threshold": 50,
 			"themeColor": "#5bbad5"
 		}
 	},
@@ -58,7 +62,11 @@
 		"scalingAlgorithm": "Mitchell",
 		"errorOnImageTooSmall": false,
 		"readmeFile": false,
-		"htmlCodeFile": false,
+		"htmlCodeFile": true,
 		"usePathAsIs": false
+	},
+	"versioning": {
+		"paramName": "v",
+		"paramValue": "1"
 	}
 }
