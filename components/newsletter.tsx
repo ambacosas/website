@@ -3,7 +3,7 @@
 import React, { FormEvent, useRef, useState } from "react";
 import { BiLoader, BiCheck, BiX } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
-import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
+import { BsEnvelope, BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { useLanguage } from "./context/LanguageContext";
 import { dataEs, dataEn } from "./data";
 const initialState = {
@@ -166,10 +166,10 @@ export default function Newsletter() {
               <div className="text-center flex flex-col items-center justify-center lg:text-left w-3/5 lg:max-w-xxl">
                 <h3 className="h3 text-white mb-2">{dataForm.titulo}</h3>
                 {/* <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p> */}
-                <li className="flex items-center mb-3">
-                  <BsFillTelephoneFill className="w-6 h-6 bg-white p-1 rounded-full" />
-                  <h3 className="text-white text-sm ml-3">+54 91137960274</h3>
-                </li>
+                <a href="mailto:web@ambaco.com.ar" className="flex items-center mb-3">
+                  <BsEnvelope  className="w-6 h-6 bg-white p-1 rounded-full" />
+                  <h3 className="text-white text-sm ml-3">web@ambaco.com.ar</h3>
+                </a>
                 {/* CTA form */}
                 <form
                   ref={form}

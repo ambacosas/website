@@ -15,6 +15,9 @@ const inter = Inter({
 export const metadata = {
   title: 'AMBACO',
   description: '',
+  icons: {
+    icon: '/icon.ico',
+  },
 }
 
 const RootLayout: React.FC<React.HTMLProps<HTMLBodyElement>> = ({ children }) => {
