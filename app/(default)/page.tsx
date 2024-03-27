@@ -10,16 +10,16 @@ import ogLogo from '../../public/images/og.png';
 
 export const metadata = {
   title: 'AMBACO',
-  description: '',
+  description: "Your strategic partner to drive growth and excellence in your company.",
   openGraph: {
     title: 'AMBACO',
-    description: '',
+    description: "Your strategic partner to drive growth and excellence in your company.",
     url: 'https://ambaco.com.ar/',
     type: 'website',
     siteName: 'AMBACO',
     images: [
       {
-        url: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRpullTl5vSZjQHAPL_eK6OOhDhtmESzoHDLGrq5lJaM-9Zv9n_v_WkLy7GY-YyxSKwTyYcSjlm7QjWzAEaCqlg2QEZlA=s1600",
+        url: "https://www.ambaco.com.ar/images/og.png",
         width: 1600,
         height: 630,
       }
