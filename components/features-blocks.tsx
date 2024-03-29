@@ -29,7 +29,7 @@ export default function FeaturesBlocks() {
 
 						{/* 1st item */}
 						{soluciones.map((item, index) => (
-							<div key={index} className="relative flex flex-col min-h-[245px] items-center p-6 bg-white rounded shadow-xl">
+							<div key={index} className="relative flex flex-col min-h-[300px] items-center p-6 bg-white rounded shadow-xl">
 								<div className='p-4 rounded-full bg-blue-600 mb-2'>
 									<item.icono className='text-white font-bold h-6 w-6' />
 								</div>

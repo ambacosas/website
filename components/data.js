@@ -54,10 +54,10 @@ export const dataEn = {
   subtitulo: 'We invite you to immerse yourself in a universe of business solutions designed to propel your organization towards new horizons of success.',
  },
  solutionCards: [
-  { titulo: 'Tailored Projects', icono: solucionesIcono.project, texto:'In-depth survey of needs and strategic planning.' },
+  { titulo: 'Tailored Projects', icono: solucionesIcono.project, texto:'We specialize in creating unique solutions tailored specifically to the needs of your company. Through thorough analysis and detailed strategic planning.' },
   { titulo: 'Diversity of Technological Tools', icono: solucionesIcono.tools, texto: 'Technological solutions for KPI visualization, website design, chatbot implementation, artificial intelligence development, and more.' },
-  { titulo: 'Innovation in Processes', icono: solucionesIcono.innovation, texto:'Comprehensive analysis and proposal of solutions on processes.' },
-  { titulo: 'Customer Satisfaction Focus', icono: solucionesIcono.satisfaction, texto:'Solutions designed with the customer at the center, seeking to maximize added value.' },
+  { titulo: 'Innovation in Processes', icono: solucionesIcono.innovation, texto:'Our goal is to drive innovation in your company, transforming your processes through thorough analysis and the implementation of customized solutions.' },
+  { titulo: 'Customer Satisfaction Focus', icono: solucionesIcono.satisfaction, texto:'You, our customer, are our priority. We design solutions with your satisfaction in mind, placing you at the center of every step of the process.' },
  ],
  nosotros: [
   { texto: '', nombre: 'Joaquín Amodio', cargo: 'Industrial Engineer', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
@@ -103,10 +103,10 @@ export const dataEs = {
   subtitulo: 'Te invitamos a sumergirte en un universo de soluciones empresariales diseñadas para impulsar tu organización hacia nuevos horizontes de éxito.',
  },
  solutionCards: [
-  { titulo: 'Proyectos a la Medida', icono: solucionesIcono.project, texto: 'Relevamiento en profundidad de las necesidades y planificación estratégica.' },
+  { titulo: 'Proyectos a la Medida', icono: solucionesIcono.project, texto: 'Nos dedicamos a crear soluciones únicas que se adapten específicamente a las necesidades de su empresa. A través de un análisis profundo y una planificación estratégica detallada.' },
   { titulo: 'Diversidad de Herramientas Tecnológicas', icono: solucionesIcono.tools, texto: 'Soluciones tecnológicas para visualización de KPIs, diseño de páginas web, implementación de chatbots, desarrollo de inteligencia artificial, y más.' },
-  { titulo: 'Innovación en Procesos', icono: solucionesIcono.innovation, texto: 'Análisis exhaustivo y propuesta de soluciones sobre procesos.' },
-  { titulo: 'Enfoque en Satisfacción al Cliente', icono: solucionesIcono.satisfaction, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
+  { titulo: 'Innovación en Procesos', icono: solucionesIcono.innovation, texto: 'Nuestro objetivo es impulsar la innovación en su empresa, transformando sus procesos mediante un análisis exhaustivo y la implementación de soluciones personalizadas.' },
+  { titulo: 'Enfoque en Satisfacción al Cliente', icono: solucionesIcono.satisfaction, texto: 'Nuestra prioridad es usted, nuestro cliente. Diseñamos soluciones con su satisfacción en mente, colocándolo en el centro de cada paso del proceso.' },
  ],
  nosotros: [
   { texto: '', nombre: 'Joaquín Amodio', cargo: 'Ingeniero Industrial', empresa: '', imagen: Joacoimg, red: 'https://www.linkedin.com/in/joaqu%C3%ADn-amodio-aa93271ba/' },
