@@ -189,7 +189,7 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image
-                        className="lg:max-w-none mx-auto rounded h-[400px] md:h-full"
+                        className="lg:max-w-none mx-auto rounded !h-[400px] md:h-full"
                         src={Tab4}
                         width={500}
                         height="462"

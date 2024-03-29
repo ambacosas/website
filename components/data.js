@@ -55,7 +55,7 @@ export const dataEn = {
  },
  solutionCards: [
   { titulo: 'Tailored Projects', icono: solucionesIcono.project, texto:'In-depth survey of needs and strategic planning.' },
-  { titulo: 'Diversity of Technological Tools', icono: solucionesIcono.tools, texto: 'Application of visualization, programming, and organizational tools.' },
+  { titulo: 'Diversity of Technological Tools', icono: solucionesIcono.tools, texto: 'Technological solutions for KPI visualization, website design, chatbot implementation, artificial intelligence development, and more.' },
   { titulo: 'Innovation in Processes', icono: solucionesIcono.innovation, texto:'Comprehensive analysis and proposal of solutions on processes.' },
   { titulo: 'Customer Satisfaction Focus', icono: solucionesIcono.satisfaction, texto:'Solutions designed with the customer at the center, seeking to maximize added value.' },
  ],
@@ -104,7 +104,7 @@ export const dataEs = {
  },
  solutionCards: [
   { titulo: 'Proyectos a la Medida', icono: solucionesIcono.project, texto: 'Relevamiento en profundidad de las necesidades y planificación estratégica.' },
-  { titulo: 'Diversidad de Herramientas Tecnológicas', icono: solucionesIcono.tools, texto: 'Herramientas de visualización de KPIs, Páginas Web, Chatbots, Inteligencia Artificial, entre otras.' },
+  { titulo: 'Diversidad de Herramientas Tecnológicas', icono: solucionesIcono.tools, texto: 'Soluciones tecnológicas para visualización de KPIs, diseño de páginas web, implementación de chatbots, desarrollo de inteligencia artificial, y más.' },
   { titulo: 'Innovación en Procesos', icono: solucionesIcono.innovation, texto: 'Análisis exhaustivo y propuesta de soluciones sobre procesos.' },
   { titulo: 'Enfoque en Satisfacción al Cliente', icono: solucionesIcono.satisfaction, texto: 'Soluciones diseñadas con el cliente en el centro buscando maximizar el valor agregado.' },
  ],
