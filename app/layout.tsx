@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 import { LanguageProvider } from '@/components/context/LanguageContext'
+import Whatsapp from '@/components/ui/whatsapp'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ const RootLayout: React.FC<React.HTMLProps<HTMLBodyElement>> = ({ children }) =>
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
             {children}
+            <Whatsapp />
             <Banner />
           </div>
         </body>

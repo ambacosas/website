@@ -2,7 +2,7 @@
 import VideoThumb from '@/public/images/hero-image.png'
 import React, { useEffect, useState } from 'react';
 import ModalVideo from '@/components/modal-video'
-import {dataEs, dataEn} from  './data';
+import { dataEs, dataEn } from './data';
 import Image from 'next/image';
 import Logo from '../public/images/og.png'
 import { useLanguage } from './context/LanguageContext';
@@ -10,13 +10,13 @@ import { useLanguage } from './context/LanguageContext';
 export default function Hero() {
 
   const { currentLanguage } = useLanguage();
-	const dataHero = currentLanguage === 'es' ? dataEs.hero : dataEn.hero
+  const dataHero = currentLanguage === 'es' ? dataEs.hero : dataEn.hero
 
   return (
     <section id='#home' className="relative">
 
       {/* Illustration behind hero content */}
-      <div  className="absolute md:left-1/2 -left-[10px] transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
+      <div className="absolute md:left-1/2 -left-[10px] transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
@@ -53,21 +53,21 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div  className="md:hidden absolute -left-[10.75rem] transform -translate-x-1/2 -bottom-[251px] pointer-events-none -z-1" aria-hidden="true">
-        <svg width="1200" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
-              <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor='#0070f4' offset="77.402%" />
-              <stop stopColor="#DFDFDF" offset="100%" />
-            </linearGradient>
-          </defs>
-          <g fill="url(#illustration-01)" fillRule="evenodd">
-            <circle cx="1232" cy="128" r="128" />
-            <circle cx="155" cy="443" r="64" />
-          </g>
-        </svg>
-      </div>
+          <div className="md:hidden absolute -left-[10.75rem] transform -translate-x-1/2 -bottom-[251px] pointer-events-none -z-1" aria-hidden="true">
+            <svg width="1200" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
+                  <stop stopColor="#FFF" offset="0%" />
+                  <stop stopColor='#0070f4' offset="77.402%" />
+                  <stop stopColor="#DFDFDF" offset="100%" />
+                </linearGradient>
+              </defs>
+              <g fill="url(#illustration-01)" fillRule="evenodd">
+                <circle cx="1232" cy="128" r="128" />
+                <circle cx="155" cy="443" r="64" />
+              </g>
+            </svg>
+          </div>
 
           {/* Hero image */}
           {/* <ModalVideo
