@@ -27,7 +27,7 @@ export default function Features() {
   useEffect(() => {
     heightFix();
     const intervalId = setInterval(() => {
-      setTab((prevTab) => (prevTab === 1 ? 2 : prevTab === 2 ? 3 : prevTab === 3 ? 4 : 1));
+      setTab((prevTab) => (prevTab === 1 ? 2 : 1 ));
     }, 4000);
     return () => clearInterval(intervalId);
   }, []);
@@ -148,8 +148,8 @@ export default function Features() {
                       {/* <Image className="lg:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
-                  {/* Item 3 */}
-                  <Transition
+
+                  {/* <Transition
                     show={tab === 3}
                     appear={true}
                     className="w-full"
@@ -170,10 +170,8 @@ export default function Features() {
                         height="462"
                         alt="Features bg"
                       />
-                      {/* <Image className="lg:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
-                  {/* Item 4 */}
                   <Transition
                     show={tab === 4}
                     appear={true}
@@ -195,9 +193,8 @@ export default function Features() {
                         height="462"
                         alt="Features bg"
                       />
-                      {/* <Image className="lg:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
-                  </Transition>
+                  </Transition> */}
                 </div>
               </div>
             </div>

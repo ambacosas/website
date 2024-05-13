@@ -29,7 +29,7 @@ const RootLayout: React.FC<React.HTMLProps<HTMLBodyElement>> = ({ children }) =>
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
             {children}
-            <Whatsapp />
+            {/* <Whatsapp /> */}
             <Banner />
           </div>
         </body>

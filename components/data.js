@@ -46,8 +46,8 @@ export const dataEn = {
  servicesTab: [
   {icon: serviciosIcono.bi, n: 1, titulo: 'Business Intelligence', texto: 'Survey of key business and process indicators to streamline information flows and generate tools that visualize your company\'s KPIs, facilitating decision-making and activity tracking.' },
   {icon: serviciosIcono.mejora, n: 2, titulo: 'Continuous Improvement', texto: 'Application of Lean methodologies for the organization, restructuring, and elimination of processes with the aim of optimization and achieving measurable results.' },
-  {icon: serviciosIcono.agil, n: 3, titulo: 'Agile Methodologies', texto: 'We offer a specialized approach in agile methodologies, designed to optimize software development and project management. We encourage collaboration and ensure timely delivery of high-quality results.' },
-  {icon: serviciosIcono.web, n: 4, titulo: 'Tech Solutions', texto: "We offer a broad range of technological solutions, spanning from website and bot development to custom artificial intelligence applications, always striving to find the optimal solution for your company's needs." },
+  // {icon: serviciosIcono.agil, n: 3, titulo: 'Agile Methodologies', texto: 'We offer a specialized approach in agile methodologies, designed to optimize software development and project management. We encourage collaboration and ensure timely delivery of high-quality results.' },
+  // {icon: serviciosIcono.web, n: 4, titulo: 'Tech Solutions', texto: "We offer a broad range of technological solutions, spanning from website and bot development to custom artificial intelligence applications, always striving to find the optimal solution for your company's needs." },
  ],
  solutions: {
   titulo: 'Explore the Solutions',
@@ -94,8 +94,8 @@ export const dataEs = {
  servicesTab: [
   {icon: serviciosIcono.bi, n: 1, titulo: 'Inteligencia de Negocios', texto: 'Relevamiento de indicadores claves de negocio y procesos para la eficientización de flujos de información y generación de herramientas que permitan visualizar los KPIs de su empresa, facilitando la toma de decisiones y el seguimiento de las actividades.' },
   {icon: serviciosIcono.mejora, n: 2, titulo: 'Mejora Continua', texto: 'Aplicación de metodologías Lean para la organización, reestructuración y eliminación de procesos con la búsqueda de la optimización y de obtener resultados medibles.' },
-  {icon: serviciosIcono.agil, n: 3, titulo: 'Metodologías Ágiles', texto: 'Ofrecemos un enfoque especializado en metodologías ágiles, diseñadas para optimizar el desarrollo de software y la gestión de proyectos. Fomentamos la colaboración y garantizamos la entrega oportuna de resultados de alta calidad.' },
-  {icon: serviciosIcono.web, n: 4, titulo: 'Soluciones Tecnológicas', texto: 'Proporcionamos una amplia variedad de soluciones tecnológicas, que van desde la creación de sitios web y bots hasta aplicaciones personalizadas de inteligencia artificial, siempre buscando la solución óptima para satisfacer las necesidades específicas de su empresa.' },
+  // {icon: serviciosIcono.agil, n: 3, titulo: 'Metodologías Ágiles', texto: 'Ofrecemos un enfoque especializado en metodologías ágiles, diseñadas para optimizar el desarrollo de software y la gestión de proyectos. Fomentamos la colaboración y garantizamos la entrega oportuna de resultados de alta calidad.' },
+  // {icon: serviciosIcono.web, n: 4, titulo: 'Soluciones Tecnológicas', texto: 'Proporcionamos una amplia variedad de soluciones tecnológicas, que van desde la creación de sitios web y bots hasta aplicaciones personalizadas de inteligencia artificial, siempre buscando la solución óptima para satisfacer las necesidades específicas de su empresa.' },
  
 ],
  solutions: {
